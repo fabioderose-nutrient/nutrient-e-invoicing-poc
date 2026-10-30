@@ -1,0 +1,48 @@
+{
+  "number": "LLS-26-3307",
+  "typeCode": "380",
+  "issueDate": "2026-10-28",
+  "deliveryDate": "2026-10-23",
+  "dueDate": "2026-11-27",
+  "currency": "EUR",
+  "buyerReference": "MB-LAB-OPS",
+  "orderReference": "MB-PO-11904",
+  "paymentTerms": "Payment within 30 days.",
+  "seller": {
+    "name": "Larkspur Lab Services BV",
+    "street": "Researchpark 21",
+    "postcode": "3001",
+    "city": "Leuven",
+    "country": "BE",
+    "vatId": "BE0824573145",
+    "legalId": "0824573145",
+    "legalIdScheme": "0208",
+    "electronicAddress": "finance@larkspur-lab.example",
+    "contactName": "Pieter Claes",
+    "contactEmail": "finance@larkspur-lab.example"
+  },
+  "buyer": {
+    "name": "Meridian Biotech SAS",
+    "street": "4 Avenue Pasteur",
+    "postcode": "31400",
+    "city": "Toulouse",
+    "country": "FR",
+    "vatId": "FR08881652043",
+    "legalId": "881652043",
+    "legalIdScheme": "0002",
+    "electronicAddress": "suppliers@meridian-biotech.example"
+  },
+  "payment": {
+    "iban": "BE44 9990 1234 5645",
+    "bic": "EXMPBEBBXXX",
+    "accountName": "Larkspur Lab Services BV"
+  },
+  "lines": [
+    { "sellerItemId": "MNT-ANNUAL", "name": "Annual maintenance contract, laboratory centrifuges", "description": "November 2026 to October 2027", "quantity": 1, "unit": "ANN", "unitPrice": 4800.00, "vatCategory": "AE", "vatRate": 0 },
+    { "sellerItemId": "CAL-VISIT", "name": "Calibration visit, pipettes and balances", "description": "21 to 23 October 2026", "quantity": 3, "unit": "DAY", "unitPrice": 950.00, "vatCategory": "AE", "vatRate": 0 },
+    { "sellerItemId": "TRV", "name": "Travel costs", "description": "Lump sum", "quantity": 1, "unit": "LS", "unitPrice": 420.00, "vatCategory": "AE", "vatRate": 0 }
+  ],
+  "vatExemptions": [
+    { "vatCategory": "AE", "reason": "Reverse charge: VAT is due by the customer (Article 196, Council Directive 2006/112/EC).", "reasonCode": "VATEX-EU-AE" }
+  ]
+}

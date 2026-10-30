@@ -1,0 +1,46 @@
+{
+  "number": "RE-2026-00871",
+  "typeCode": "380",
+  "issueDate": "2026-10-20",
+  "deliveryDate": "2026-10-16",
+  "dueDate": "2026-11-03",
+  "currency": "EUR",
+  "buyerReference": "BW-TRAINING-26",
+  "orderReference": "4500117732",
+  "paymentTerms": "Payable within 14 days without deduction. The deposit of EUR 2,000.00 has been deducted.",
+  "seller": {
+    "name": "Kestrel Technical Media GmbH",
+    "street": "Westpark 12",
+    "postcode": "50667",
+    "city": "Cologne",
+    "country": "DE",
+    "vatId": "DE318452906",
+    "legalId": "HRB 104477",
+    "electronicAddress": "billing@kestrel-media.example",
+    "contactName": "Jonas Weber",
+    "contactPhone": "+49 221 000 0871",
+    "contactEmail": "billing@kestrel-media.example"
+  },
+  "buyer": {
+    "name": "Brightwater Engineering GmbH",
+    "street": "Dockside 7",
+    "postcode": "20457",
+    "city": "Hamburg",
+    "country": "DE",
+    "vatId": "DE297513864",
+    "electronicAddress": "invoices@brightwater-eng.example",
+    "contactName": "Lena Hoffmann"
+  },
+  "payment": {
+    "iban": "DE62 1234 5678 0004 4177 35",
+    "bic": "EXMPDEFFXXX",
+    "accountName": "Kestrel Technical Media GmbH"
+  },
+  "lines": [
+    { "sellerItemId": "BK-HYD-3", "name": "Hydraulic Systems Handbook, 3rd edition", "description": "Print, hardcover", "quantity": 12, "unit": "C62", "unitPrice": 89.00, "vatCategory": "S", "vatRate": 7 },
+    { "sellerItemId": "BK-PNE-1", "name": "Pneumatics Field Guide", "description": "Print, paperback", "quantity": 12, "unit": "C62", "unitPrice": 46.50, "vatCategory": "S", "vatRate": 7 },
+    { "sellerItemId": "EL-FPB-12", "name": "Online course licence: Fluid Power Basics", "description": "One seat, 12 months", "quantity": 12, "unit": "C62", "unitPrice": 149.00, "vatCategory": "S", "vatRate": 19 },
+    { "sellerItemId": "WS-DAY", "name": "On-site workshop with trainer", "description": "16 and 17 October 2026", "quantity": 2, "unit": "DAY", "unitPrice": 1450.00, "vatCategory": "S", "vatRate": 19 }
+  ],
+  "prepaidAmount": 2000.00
+}

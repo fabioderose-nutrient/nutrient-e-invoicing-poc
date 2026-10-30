@@ -1,0 +1,54 @@
+{
+  "_comment": "Received-invoice sample. The supplier's system declares totals that leave out line 3, so the checks must reject it.",
+  "number": "CL-7781",
+  "typeCode": "380",
+  "issueDate": "2026-10-09",
+  "deliveryDate": "2026-10-08",
+  "dueDate": "2026-11-08",
+  "currency": "EUR",
+  "buyerReference": "NB-EVENT-1008",
+  "paymentTerms": "Payment within 30 days.",
+  "notes": [
+    { "subject": "PMT", "text": "Fixed compensation for recovery costs in case of late payment: EUR 40." },
+    { "subject": "PMD", "text": "Late payment interest: three times the legal interest rate." },
+    { "subject": "AAB", "text": "No discount for early payment." }
+  ],
+  "seller": {
+    "name": "Copperleaf Catering SAS",
+    "street": "41 Avenue Berthelot",
+    "postcode": "69007",
+    "city": "Lyon",
+    "country": "FR",
+    "vatId": "FR61839204117",
+    "legalId": "839204117",
+    "legalIdScheme": "0002",
+    "electronicAddress": "billing@copperleaf-catering.example"
+  },
+  "buyer": {
+    "name": "Northbridge Interiors SAS",
+    "street": "18 Avenue Garibaldi",
+    "postcode": "69003",
+    "city": "Lyon",
+    "country": "FR",
+    "vatId": "FR88912408377",
+    "legalId": "912408377",
+    "legalIdScheme": "0002",
+    "electronicAddress": "invoices@northbridge-interiors.example"
+  },
+  "payment": { "iban": "FR76 1234 5007 3300 0205 8310 104", "accountName": "Copperleaf Catering SAS" },
+  "lines": [
+    { "sellerItemId": "BUF-40", "name": "Lunch buffet", "description": "Showroom opening, 40 guests", "quantity": 40, "unit": "C62", "unitPrice": 28.50, "vatCategory": "S", "vatRate": 10 },
+    { "sellerItemId": "RNT-TBL", "name": "Equipment rental: tables and linen", "quantity": 1, "unit": "LS", "unitPrice": 180.00, "vatCategory": "S", "vatRate": 20 },
+    { "sellerItemId": "STF-HR", "name": "Service staff", "description": "2 people, 4 hours", "quantity": 8, "unit": "HUR", "unitPrice": 32.00, "vatCategory": "S", "vatRate": 20 }
+  ],
+  "declaredTotals": {
+    "lineTotal": 1320.00,
+    "taxBasisTotal": 1320.00,
+    "taxTotal": 150.00,
+    "grandTotal": 1470.00,
+    "vatBreakdown": [
+      { "category": "S", "rate": 20, "basisAmount": 180.00, "taxAmount": 36.00 },
+      { "category": "S", "rate": 10, "basisAmount": 1140.00, "taxAmount": 114.00 }
+    ]
+  }
+}

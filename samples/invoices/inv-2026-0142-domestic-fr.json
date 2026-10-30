@@ -1,0 +1,56 @@
+{
+  "number": "INV-2026-0142",
+  "typeCode": "380",
+  "issueDate": "2026-10-15",
+  "deliveryDate": "2026-10-13",
+  "dueDate": "2026-11-14",
+  "currency": "EUR",
+  "buyerReference": "AF-PROC-2291",
+  "orderReference": "PO-2026-0815",
+  "paymentTerms": "Payment within 30 days of the invoice date.",
+  "notes": [
+    { "subject": "PMT", "text": "Fixed compensation for recovery costs in case of late payment: EUR 40." },
+    { "subject": "PMD", "text": "Late payment interest: three times the legal interest rate." },
+    { "subject": "AAB", "text": "No discount for early payment." }
+  ],
+  "seller": {
+    "name": "Northbridge Interiors SAS",
+    "street": "18 Avenue Garibaldi",
+    "postcode": "69003",
+    "city": "Lyon",
+    "country": "FR",
+    "vatId": "FR88912408377",
+    "legalId": "912408377",
+    "legalIdScheme": "0002",
+    "electronicAddress": "invoices@northbridge-interiors.example",
+    "contactName": "Claire Martin",
+    "contactPhone": "+33 4 00 00 01 42",
+    "contactEmail": "accounts@northbridge-interiors.example"
+  },
+  "buyer": {
+    "name": "Alder & Finch Consulting SARL",
+    "street": "9 Avenue Victor Hugo",
+    "postcode": "75116",
+    "city": "Paris",
+    "country": "FR",
+    "vatId": "FR63948215660",
+    "legalId": "948215660",
+    "legalIdScheme": "0002",
+    "electronicAddress": "ap@alder-finch.example",
+    "contactName": "Hugo Bernard"
+  },
+  "payment": {
+    "iban": "FR76 1234 5004 1200 0714 0821 397",
+    "bic": "EXMPFRPPXXX",
+    "accountName": "Northbridge Interiors SAS"
+  },
+  "lines": [
+    { "sellerItemId": "DSK-1600-OAK", "name": "Height-adjustable desk", "description": "Oak top, 160 x 80 cm", "quantity": 6, "unit": "C62", "unitPrice": 489.00, "vatCategory": "S", "vatRate": 20 },
+    { "sellerItemId": "CHR-ERG-24", "name": "Ergonomic task chair", "description": "Grey fabric, adjustable armrests", "quantity": 6, "unit": "C62", "unitPrice": 312.50, "vatCategory": "S", "vatRate": 20 },
+    { "sellerItemId": "SCR-ACU-12", "name": "Acoustic desk screen", "description": "120 cm, felt", "quantity": 6, "unit": "C62", "unitPrice": 74.90, "vatCategory": "S", "vatRate": 20 },
+    { "sellerItemId": "SRV-ASSY", "name": "Delivery and assembly", "description": "Third floor, no lift", "quantity": 1, "unit": "LS", "unitPrice": 380.00, "vatCategory": "S", "vatRate": 20 }
+  ],
+  "allowancesCharges": [
+    { "isCharge": false, "reason": "Framework agreement discount", "amount": 250.00, "vatCategory": "S", "vatRate": 20 }
+  ]
+}
